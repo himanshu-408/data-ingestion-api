@@ -11,6 +11,19 @@ A Node.js-based API system for handling data ingestion requests with priority-ba
 - Asynchronous processing with status tracking
 - Comprehensive test suite
 
+## Showcase
+
+Here's a visual demonstration of the API system in action:
+
+![/ingest](./assets/images/showcase2.png)
+*/ingest endpoint*
+
+![status/:id](./assets/images/showcase1.png)
+*/status/:id endpoint*
+
+![Tests Passes](./assets/images/testshowcase.png)
+*Tests Metrics*
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
@@ -20,7 +33,7 @@ A Node.js-based API system for handling data ingestion requests with priority-ba
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/himanshu-408/data-ingestion-api.git
 cd data-ingestion-api
 ```
 
@@ -121,4 +134,4 @@ The system enforces a rate limit of 1 batch per 5 seconds, ensuring that no more
 
 ## Priority Processing
 
-Requests are processed based on their priority (HIGH > MEDIUM > LOW) and creation time. Higher priority requests are processed before lower priority ones, regardless of when they were submitted. 
+Requests are processed based on their priority (HIGH > MEDIUM > LOW) and creation time. Higher priority requests are processed before lower priority ones, regardless of when they were submitted.
